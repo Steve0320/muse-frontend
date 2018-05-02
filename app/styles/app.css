@@ -1,0 +1,17 @@
+.header {
+  height: 40px;
+  width: 100%;
+  margin: auto;
+  background: orange;
+}
+
+.media-links {
+  text-align: center;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.media-links > a {
+  border: 1px solid red;
+  padding: 2px 15px;
+}
