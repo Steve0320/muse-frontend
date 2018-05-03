@@ -1,3 +1,9 @@
+/********** Top Bar ***********/
+
+body {
+  margin: 0;
+}
+
 .header {
   height: 40px;
   width: 100%;
@@ -7,11 +13,57 @@
 
 .media-links {
   text-align: center;
-  top: 50%;
+}
+
+.media-links > div {
+  display: inline-block;
+  height: 40px;
+  width: 180px;
+  /* Temporary shadow to show button boundaries */
+  -webkit-box-shadow: inset 0 0 0 1px red;
+  -moz-box-shadow: inset 0 0 0 1px red;
+  box-shadow: inset 0 0 0 1px red;
+}
+
+.media-links > div > a {
+  display: inline-block;
   transform: translateY(50%);
 }
 
-.media-links > a {
-  border: 1px solid red;
-  padding: 2px 15px;
+.content {
+  height: calc(100vh - 40px);
+  background: green;
+}
+
+/********* Media Covers **********/
+
+.tv {
+  height: 100%;
+  overflow: auto;
+  background: purple;
+}
+
+.tv-cards {
+  text-align: center;
+  line-height: 0;
+  padding: 10px 0;
+}
+
+.media-menu {
+  position: absolute;
+  height: 80px;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .7);
+
+}
+
+.media-cover {
+  display: inline-block;
+  margin: 10px 10px;
+}
+
+.media-cover-poster {
+  width: 160px;
+  height: 240px;
 }

@@ -7,7 +7,7 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('shows');
+  this.route('tv');
 });
 
 export default Router;
