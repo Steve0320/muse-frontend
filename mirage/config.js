@@ -10,6 +10,11 @@ export default function() {
         "id": "1",
         "attributes": {
           "show-title": "Daredevil",
+          "status": "continuing",
+          "aired": "2015-04-10",
+          "tvid": "281662",
+          "network": "Netflix",
+          "description": "Matt Murdock, with his other senses superhumanly enhanced, fights crime as a blind lawyer by day, and vigilante by night. Matt Murdock, with his other senses superhumanly enhanced, fights crime as a blind lawyer by day, and vigilante by night.",
           "cover-url": "http://cdn.collider.com/wp-content/uploads/2015/02/daredevil-tv-series-poster-matt-murdock.jpg",
           "created-at": "0001-01-01T00:00:00Z",
           "updated-at": "0001-01-01T00:00:00Z"

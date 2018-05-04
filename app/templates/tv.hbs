@@ -2,7 +2,11 @@
   <div class="tv-cards">
     {{~#each model as |show|~}}
       <div class="media-cover">
-        <div class="media-cover-overlay"></div>
+        <div class="media-cover-overlay">
+          <p class="media-cover-title">{{show.show_title}}</p>
+          <p>Status: {{show.status}}</p>
+          <p>Network: {{show.network}}</p>
+        </div>
         <img class="media-cover-poster" src="{{show.cover_url}}">
       </div>
     {{~/each~}}
