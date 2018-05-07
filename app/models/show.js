@@ -1,7 +1,7 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  show_title: DS.attr(),
+  title: DS.attr(),
   cover_url: DS.attr(),
   status: DS.attr(),
   aired: DS.attr(),
