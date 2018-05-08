@@ -1,11 +1,11 @@
 <div class="tv">
-  <div class="tv-cards">
-    {{#link-to "tv.index"}}
-      <div>
-        TEST
+  <div class="season-cards">
+    {{~#each seasonByNumber as |season|~}}
+      <div class="tv-seasons">
+        <h3>Season {{season.season_number}}</h3>
       </div>
-    {{/link-to}}
+    {{~/each~}}
   </div>
 </div>
 
-{{media-menu}}
+{{media-menu home="tv.index"}}

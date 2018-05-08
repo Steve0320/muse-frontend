@@ -16,6 +16,13 @@ export default function() {
       "cover-url": "http://cdn.collider.com/wp-content/uploads/2015/02/daredevil-tv-series-poster-matt-murdock.jpg",
       "created-at": "0001-01-01T00:00:00Z",
       "updated-at": "0001-01-01T00:00:00Z"
+    },
+    "relationships": {
+      "seasons": {
+        "links": {
+          "related": "/api/v1/shows/1/seasons",
+        }
+      }
     }
   }, {
     "type": "shows",
@@ -172,6 +179,24 @@ export default function() {
     }
   }];
 
+  let seasons = [{
+    "type": "seasons",
+    "id": "1",
+    "attributes": {
+      "season-number": 2,
+      "created-at": "0001-01-01T00:00:00Z",
+      "updated-at": "0001-01-01T00:00:00Z",
+    }
+  }, {
+    "type": "seasons",
+    "id": "2",
+    "attributes": {
+      "season-number": 1,
+      "created-at": "0001-01-01T00:00:00Z",
+      "updated-at": "0001-01-01T00:00:00Z",
+    }
+  }];
+
   this.get('/shows', function() {
     return {data: shows};
   });
@@ -179,5 +204,17 @@ export default function() {
   this.get('/shows/:id', function(db, request) {
     return {data: shows.find((show) => request.params.id === show.id)}
   });
+
+  this.get('/seasons', function() {
+    return {data: seasons}
+  });
+
+  this.get('/seasons/:id', function(db, request) {
+    return {data: seasons.find((season) => request.params.id === season.id)}
+  });
+
+  this.get('/shows/1/seasons', function() {
+    return {data: seasons}
+  })
 
 }

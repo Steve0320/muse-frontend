@@ -1,9 +1,11 @@
 <div class="tv">
   <div class="tv-cards">
-    {{~#each model as |show|~}}
-      {{media-box media=show type="tv.show"}}
+    {{~#each modelByTitle as |show|~}}
+      {{#media-box media=show link="tv.show"}}
+        <p class="media-cover-title">{{show.title}}</p>
+      {{/media-box}}
     {{~/each~}}
   </div>
 </div>
 
-{{media-menu}}
+{{media-menu home="tv.index"}}

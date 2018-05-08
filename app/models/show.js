@@ -9,5 +9,6 @@ export default DS.Model.extend({
   network: DS.attr(),
   description: DS.attr(),
   created_at: DS.attr(),
-  updated_at: DS.attr()
+  updated_at: DS.attr(),
+  seasons: DS.hasMany('season')
 });
