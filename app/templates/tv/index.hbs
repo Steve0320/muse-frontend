@@ -1,5 +1,5 @@
-<div class="tv">
-  <div class="tv-cards">
+<div class="media">
+  <div class="media-cards">
     {{~#each modelByTitle as |show|~}}
       {{#media-box media=show link="tv.show"}}
         <p class="media-cover-title">{{show.title}}</p>
@@ -8,4 +8,4 @@
   </div>
 </div>
 
-{{media-menu home="tv.index"}}
+{{media-menu home="tv.index" search="tv.search"}}

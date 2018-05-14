@@ -1,0 +1,11 @@
+<div class="media">
+  <div class="media-cards">
+    {{~#each modelByTitle as |movie|~}}
+      {{#media-box media=movie link="film.movie"}}
+        <p class="media-cover-title">{{movie.title}}</p>
+      {{/media-box}}
+    {{~/each~}}
+  </div>
+</div>
+
+{{media-menu home="film.index" search="film.search"}}
