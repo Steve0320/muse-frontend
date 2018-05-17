@@ -1,13 +1,13 @@
-{{#link-to link media}}
+{{#link-to link media.id}}
 
   <div class="media-cover-overlay">
     {{yield}}
   </div>
 
-  {{#if media.cover_url}}
-    <img class="media-cover-poster" src="{{media.cover_url}}">
+  {{#if media.poster_path}}
+    <img class="media-cover-poster" src="{{media.poster_path}}">
   {{else}}
-    <!-- cover_url attribute not present -->
+    <!-- poster_path attribute not present -->
     <img class="media-cover-poster" src="http://www.clker.com/cliparts/0/4/6/1/11949904011525963418file_broken.svg.med.png">
   {{/if}}
 

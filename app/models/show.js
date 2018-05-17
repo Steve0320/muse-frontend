@@ -1,13 +1,18 @@
 import DS from 'ember-data';
 
 export default DS.Model.extend({
-  title: DS.attr(),
-  cover_url: DS.attr(),
-  status: DS.attr(),
-  aired: DS.attr(),
-  tvid: DS.attr(),
-  network: DS.attr(),
+  backdrop_path: DS.attr(),
+  homepage: DS.attr(),
+  tmdb_id: DS.attr(),
+  original_language: DS.attr(),
+  original_title: DS.attr(),
   description: DS.attr(),
+  popularity: DS.attr(),
+  poster_path: DS.attr(),
+  release_date: DS.attr(),
+  runtime: DS.attr(),
+  status: DS.attr(),
+  title: DS.attr(),
   created_at: DS.attr(),
   updated_at: DS.attr(),
   seasons: DS.hasMany('season')
