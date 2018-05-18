@@ -8,5 +8,6 @@ export default DS.Model.extend({
   title: DS.attr(),
   created_at: DS.attr(),
   updated_at: DS.attr(),
-  show: DS.belongsTo('show')
+  show: DS.belongsTo('show'),
+  episodes: DS.hasMany('episode')
 });

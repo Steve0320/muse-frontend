@@ -3,6 +3,9 @@
     {{~#each seasonByNumber as |season|~}}
       <div class="tv-seasons">
         <h3>{{season.title}}</h3>
+        {{#each season.episodes as |episode|}}
+          <p>({{episode.number}}) {{episode.title}}</p>
+        {{/each}}
       </div>
     {{~/each~}}
   </div>
